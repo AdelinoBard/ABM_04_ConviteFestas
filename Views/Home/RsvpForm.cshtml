@@ -1,0 +1,42 @@
+@model ABM_ConviteFestas.Models.ConvidadoResposta
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Confirmação</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="/css/styles.css" />
+</head>
+<body>
+    <h5 class="bg-primary text-white text-center m-2 p-2">Confirmação de Presença</h5>
+    <form asp-action="RsvpForm" method="post" class="m-2">
+        <div asp-validation-summary="All"></div>
+        <div class="form-group">
+            <label asp-for="Name" class="form-label">Seu nome:</label>
+            <input asp-for="Name" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Email" class="form-label">Seu e-mail:</label>
+            <input asp-for="Email"  class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="Phone" class="form-label">Seu telefone:</label>
+            <input asp-for="Phone" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label asp-for="WillAttend" class="form-label">
+                Você vai comparecer?
+            </label>
+            <select asp-for="WillAttend" class="form-control">
+                <option value="">Escolha uma opção</option>
+                <option value="true">Sim, estarei lá</option>
+                <option value="false">Não, eu não posso ir</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary mt-3">Enviar</button>
+    </form>
+</body>
+</html>

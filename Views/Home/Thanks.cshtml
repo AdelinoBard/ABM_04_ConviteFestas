@@ -1,0 +1,23 @@
+@model ABM_ConviteFestas.Models.ConvidadoResposta
+@{
+    Layout = null;
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Obrigado</title>
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+</head>
+<body class="text-center">
+    <div>
+        <h1>Obrigado, @Model?.Name!</h1>
+        @if (Model?.WillAttend == true) {
+            @:Que bom que você vem! As bebidas já estão na geladeira!
+        } else {
+            @:Lamentamos que não possa vir, mas obrigado por avisar.
+        }
+    </div>
+    <a asp-action="ListResponses">Ver lista de confirmados</a>
+</body>
+</html>
