@@ -2,22 +2,18 @@
 
 Aplicativo de Confirmação de Presença em um evento, festa ou algo do tipo.
 
-## 📋 Visão Geral
-Demonstração de aplicativo ASP.NET Core para gerenciar confirmações de presença.
-
-## 🎯 Objetivos
 1. Página inicial com informações sobre a festa
 2. Formulário de confirmação de presença (RSVP)
 3. Validação do formulário e página de agradecimento
 4. Página de resumo com lista de confirmados
 
-## 🛠️ Pré-requisitos
+## Pré-requisitos
 - SDK .NET 9.0.203
 ```bash
 dotnet --version
 ```
 
-## ✅ Testando o Aplicativo
+## Testando o Aplicativo
 1. Execute o projeto:
 ```bash
 dotnet run
@@ -26,7 +22,7 @@ dotnet run
 3. Teste o fluxo completo:
    - Página inicial → Formulário → Confirmação → Lista de confirmados
 
-## 📌 Melhorias Futuras
+## Melhorias Futuras
 - Adicionar autenticação de usuários
 - Implementar armazenamento persistente (banco de dados)
 - Adicionar upload de fotos para a página inicial
